@@ -6,8 +6,7 @@ for i in range(n-1):
     for j in range(i+1, n):
         if nums[j] < nums[minidx]:
             minidx = j
-    min_value = nums.pop(minidx)
-    nums.insert(i , min_value)
+    nums[i], nums[minidx] = nums[minidx], nums[i]
 print("Sorted array: ", nums)
 
-#the pop() and insert() operation add extra o(n) which make the code TC O(n^3)
+#Now this is classic swapping tehnique which give the algo O(n^2)
