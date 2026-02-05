@@ -9,3 +9,5 @@ for i in range(n-1):
     min_value = nums.pop(minidx)
     nums.insert(i , min_value)
 print("Sorted array: ", nums)
+
+#the pop() and insert() operation add extra o(n) which make the code TC O(n^3)
