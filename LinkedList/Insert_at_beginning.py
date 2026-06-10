@@ -1,3 +1,4 @@
+
 #node class
 class Node:
     def __init__(self,data= None, next = None):
@@ -8,8 +9,7 @@ class Node:
 class Linkedlist:
     def __init__(self):
         self.head = None
-    
-    def instet_at_begining(self,data):
+    def insert_at_beginning(self,data):
         node = Node(data,self.head)
         self.head = node
         
@@ -25,12 +25,13 @@ class Linkedlist:
             itr = itr.next
         print(llstr)
         
-if __name__ == '__main__':
-    ll = Linkedlist()
-    ll.instet_at_begining(5)
-    ll.instet_at_begining(10)
-    ll.instet_at_begining(15)
-    ll.instet_at_begining(20)
-    ll.print()
-        
-        
+ll = Linkedlist()
+
+ll.insert_at_beginning(5)
+ll.insert_at_beginning(10)
+ll.insert_at_beginning(15)
+ll.insert_at_beginning(20)
+ll.insert_at_beginning(25)
+ll.insert_at_beginning(30)
+ll.insert_at_beginning(35)
+ll.print()
